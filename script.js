@@ -1,4 +1,4 @@
-document.querySelector('th').addEventListener('click', sortingByAge)
+document.querySelector('th').addEventListener('click', sortingByAge);
 
 function sortingByAge() {
   const rows = [...document.querySelector('tbody').rows];
@@ -7,6 +7,6 @@ function sortingByAge() {
   })
 
   rows.forEach((node) => {
-    document.querySelector('table > tbody').append(node)
+    document.querySelector('table > tbody').append(node);
   })
 }
