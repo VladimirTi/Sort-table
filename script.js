@@ -11,9 +11,7 @@ document.querySelector('thead').addEventListener('click', (event) => {
 
   const container = document.createElement('tbody');
 
-  rows.forEach((node) => {
-    container.append(node);
-  })
+  container.append(...rows);
 
   document.querySelector('tbody').replaceWith(container);
 });
